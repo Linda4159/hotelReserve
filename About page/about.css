@@ -61,14 +61,14 @@ nav {
     align-items: center;
     justify-content: center;
     color: #F4F7FC;
-    background-color: black;
+    background-color: rgb(61, 58, 58);
 }
 .herosh3{
     display: flex;
     align-items: center;
     justify-content: center;
     color: #F4F7FC;
-    background-color: black;
+    background-color: rgb(57, 54, 54);
 }
 
 .search {
@@ -125,7 +125,7 @@ nav {
   footer{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
     background-color: rgb(43, 41, 41);
     color: white;
   }
@@ -136,10 +136,11 @@ nav {
 }
 
 .logo{
-    height: 70px;
-    width: 70px;
-    border-radius: 80px;
-    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    /* background-color: white; */
+    display: flex;
 
 }
 .logo img{
