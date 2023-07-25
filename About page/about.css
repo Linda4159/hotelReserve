@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+
+}
+@media screen and (min-width: 1000px) {
+    .debbyabout{
+        min-height: 400px;
+        width: 100%;
+        background-color: #cccccc;
+        justify-content: center; 
+        align-items: center;
+        display: flex;
+}
+.debbya{
+    height: 300px;
+    width: 500px;
+    background-image: url(./image/Frame\ 48.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+
+}
+
+
+.h1a{
+    font-size: 50px;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 30px;
+}
+  
+.pa{
+    font-size: 20px;
+    margin-left: 30px;
+
+}
+
+.writeup{
+    height: 300px;
+    width: 500px;
+    background-color: rgb(219, 214, 214);
+    justify-content: center;
+    align-items: center;
+    
+    }
+    
+}
+
+
+
