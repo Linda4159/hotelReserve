@@ -2,6 +2,7 @@
 body{
     background-color: #CCCCCC;
     /* min-height: 90vh; */
+    font-family: 'Poppins', sans-serif;
 }
 
 .section-top {
@@ -48,5 +49,16 @@ h5 {
 
 .section {
     background-color: white;
-    height: 45px;
+    /* height: 45px; */
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.rooms {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    margin-right: 10px;
 }
