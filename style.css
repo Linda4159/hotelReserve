@@ -101,25 +101,7 @@ nav {
  .searchhotel {
     margin: auto;
  }
-/* .search {
-    /* margin-top: 200px; */
-    /* display: flex;
-    flex-direction: row;
-    width: 80%;
-    height: 140px;
-    background-color: white;
-    justify-content: center;
-    position: absolute;
-    bottom: 0%;
-    margin-left: 150px;
-}  */
-/* .searchcity {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around ;
-    margin: auto;
-} */
+
 footer{
     display: flex;
     justify-content: space-around;
@@ -131,4 +113,15 @@ footer{
  
 .ha1{
     margin: 20px;
+}
+.suggestepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hotellag {
+    width: 100px;
+    height: 70px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
