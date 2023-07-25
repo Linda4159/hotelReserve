@@ -5,8 +5,9 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-eader {
-    position: fixed;
+
+header {
+    position: sticky;
     background: #F4F7FC;
     height: 75px;
     width: 100%;
@@ -59,16 +60,23 @@ nav {
     background-color: white;
     border-radius: 5px;
     width: 50%;
-    height: 150px;
+    height: fit-content;
     text-align: center;
     margin-left: 30px;
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
 }
 
 p{
-    font-size: 15px;
+    font-size: 10px;
     /* width: 40%; */
     /* flex-wrap: wrap; */
+    font-weight: 400;
+    margin-left: 20px;
     margin: 0;
     padding: 0;
 
@@ -80,9 +88,21 @@ h3{
 
 }
 
+.sub-section {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
 h5 {
     margin: 0;
     padding: 0;
+}
+
+.selections {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section {
@@ -92,6 +112,7 @@ h5 {
     display: flex;
     align-items: center;
     padding: 10px;
+    width: 60%;
 }
 
 .rooms {
