@@ -1,5 +1,55 @@
 body {
-  margin: 0;
   padding: 0;
-  background: color #666;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span {
+  width: 100%;
+  height: 90%;
+  background-color: gray;
+}
+
+.background-img {
+  background-image: url(./image/hero.jpg);
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.background-img h1 {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4f7f4;
+}
+.background-img h3 {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4f7f4;
+}
+.contact-form {
+  width: 60%;
+  background-color: aliceblue;
+  margin-top: 20px;
+}
+
+.contact-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+.contact-text2 {
+  font-size: 10px;
+  font-weight: bold;
 }
