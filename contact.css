@@ -40,9 +40,12 @@ span {
   color: #f4f7f4;
 }
 .contact-form {
-  width: 60%;
+  width: 100%;
   background-color: aliceblue;
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 20px;
 }
 
 .contact-text {
@@ -52,4 +55,45 @@ span {
 .contact-text2 {
   font-size: 10px;
   font-weight: bold;
+}
+.firstn {
+  width: 250px;
+  height: 40px;
+  margin-left: 100px;
+}
+
+.lastn {
+  width: 250px;
+  height: 40px;
+  margin-left: 100px;
+}
+.names {
+  width: 250px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.numandmail {
+  width: 250px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.mail {
+  width: 250px;
+  height: 40px;
+  margin-left: 100px;
+}
+.numbr {
+  width: 250px;
+  height: 40px;
+  margin-left: 100px;
+}
+.messages {
+  width: 500px;
+  height: 70px;
 }
