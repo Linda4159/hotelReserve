@@ -4,7 +4,7 @@ body{
     height: 90vh;
 
 }
-@media screen and (min-width: 1000px) {
+
     .debbyabout{
         min-height: 400px;
         width: 100%;
@@ -42,13 +42,35 @@ body{
 .writeup{
     height: 300px;
     width: 500px;
-    background-color: rgb(219, 214, 214);
+    background-color: rgb(241, 234, 234);
     justify-content: center;
     align-items: center;
     
     }
     
+
+  footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(43, 41, 41);
+    color: white;
+  }
+
+
+.ha1{
+    margin-bottom: 20px;
 }
 
+.logs{
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: white;
 
-
+}
+.logs img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
