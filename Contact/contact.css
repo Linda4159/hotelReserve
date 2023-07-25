@@ -20,6 +20,21 @@ header {
   z-index: 999;
   padding-top: 0px;
 }
+
+.headerlogo {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+}
+.headerlogo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin-right: 10px;
+}
 .navigation {
   display: flex;
   padding-top: 40px;
@@ -83,7 +98,7 @@ nav {
   font-weight: bold;
 }
 .contact-text2 {
-  font-size: 10px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -129,7 +144,7 @@ button {
 footer {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  /* align-items: center; */
   background-color: rgb(43, 41, 41);
   color: white;
   width: 100%;
@@ -141,13 +156,37 @@ footer {
 }
 
 .logo {
-  height: 50px;
-  width: 100px;
+  height: 30px;
+  width: 30px;
   border-radius: 10px;
   background-color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
 }
 .logo img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  margin-right: 10px;
+  /* margin-top: 0px; */
+}
+.hanburger {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hanburger {
+    display: block;
+  }
+  .navigation {
+    display: none;
+  }
+  .background-img {
+    min-height: 500px;
+  }
+}
+@media screen and (max-width: 768) {
+  button {
+    display: none;
+  }
 }
