@@ -2,6 +2,45 @@
 body{
     background-color: #CCCCCC;
     /* min-height: 90vh; */
+    font-family: 'Poppins', sans-serif;
+}
+
+eader {
+    position: fixed;
+    background: #F4F7FC;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 999 ;
+    padding-top: 0px;
+}
+button {
+    width: 150px;
+    height: 50px;
+    background-color:  #64C5c6;
+    color: #F4F7FC;
+    border-radius: 10px;
+    border: #64C5c6;
+}
+.navigation {
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-around;
+    text-align: center;
+    cursor: pointer;
+    align-items: center;
+    /* margin-right: 50px; */
+    padding-bottom: 0%;
+}
+nav {
+    cursor: pointer;
+    margin-right: 40px;
+    font-size: 100%;
+    margin-bottom: 45px;
+    color: black;
 }
 
 .section-top {
@@ -48,5 +87,24 @@ h5 {
 
 .section {
     background-color: white;
-    height: 45px;
+    /* height: 45px; */
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
+
+.rooms {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(43, 41, 41);
+    color: white;
+  }
