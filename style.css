@@ -105,7 +105,6 @@ nav {
 footer{
     display: flex;
     justify-content: space-around;
-    align-items: center;
     background-color: rgb(43, 41, 41);
     color: white;
     height:30vh;
