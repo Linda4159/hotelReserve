@@ -4,5 +4,49 @@ body{
 }
 
 header {
+    display: flex;
+    /* justify-content: space-around; */
+
+}
+.logo{
+    display: flex;
+
+}
+.debbyh11{
+    text-align: center;
+}
+
+.registerh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: color #f5f5ff;
+    min-height: 500px;
+    gap: 50px;
+
+}
+.debbyhold{
+    height: 500px;
+    width: 500px;
+}
+.debbyhold img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+ input{
+    height: 50px;
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid black;
     
+} 
+form button{
+    height:50px ;
+    width:150px ;
+    border: 1px solid black;
+    background-color: #64c5c6;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
 }
