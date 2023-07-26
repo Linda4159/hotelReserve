@@ -1,48 +1,49 @@
-body {
-  background-color: #eeeef2;
-  font-family: "Poppins", sans-serif;
+body{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
-header {
-  display: flex;
-  /* justify-content: space-around; */
-}
-.logo {
-  display: flex;
-}
-.debbyh11 {
-  text-align: center;
+
+.debbyh11{
+    text-align: center;
 }
 
-.registerh {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: color #f5f5ff;
-  min-height: 500px;
-  gap: 50px;
+.registerh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    gap: 30px;
+    /* border: 2px solid rgb(29, 28, 28); */
+    width: 80%;
+    margin: 0 auto;
+    /* border-radius: 10px; */
+    
+
 }
-.debbyhold {
-  height: 500px;
-  width: 500px;
+.debbyhold{
+    height: 350px;
+    width: 500px;
 }
-.debbyhold img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+.debbyhold img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
 }
-input {
-  height: 50px;
-  width: 350px;
-  border-radius: 5px;
-  border: 1px solid black;
-}
-form button {
-  height: 50px;
-  width: 150px;
-  border: 1px solid black;
-  background-color: #64c5c6;
-  color: white;
-  font-size: 25px;
-  border-radius: 5px;
+ input{
+    height: 38px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid black;
+    
+} 
+form button{
+    height:50px ;
+    width:150px ;
+    border: 1px solid black;
+    background-color: #64c5c6;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
 }

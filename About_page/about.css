@@ -35,7 +35,6 @@ button {
     text-align: center;
     cursor: pointer;
     align-items: center;
-    /* margin-right: 50px; */
     padding-bottom: 0%;
 }
 nav {
@@ -85,6 +84,7 @@ nav {
         justify-content: center; 
         align-items: center;
         display: flex;
+        border-radius: 10px;
 }
 .debbya{
     height: 300px;
@@ -109,15 +109,18 @@ nav {
 .pa{
     font-size: 20px;
     margin-left: 30px;
+    width: 400px;
 
 }
 
 .writeup{
-    height: 300px;
+    height: 350px;
     width: 500px;
     background-color: rgb(241, 234, 234);
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    
     
     }
     
@@ -125,14 +128,15 @@ nav {
   footer{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
     background-color: rgb(43, 41, 41);
     color: white;
   }
 
 
 .ha1{
-    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .logo{
@@ -141,6 +145,10 @@ nav {
     border-radius: 80px;
     /* background-color: white; */
     display: flex;
+
+}
+p{
+    font-size: 13px;
 
 }
 .logo img{
@@ -152,6 +160,19 @@ nav {
     
     .hanburgar{
         display: none;
+    }
+
+    .top{
+        text-align: left;
+    }
+    .beach{
+        text-align: left;
+    }
+    .twiter{
+        text-align: left;
+    }
+    .quick{
+        text-align: left;
     }
 
 @media screen and (max-width: 768px) {
