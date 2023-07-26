@@ -1,6 +1,13 @@
 // alert("welcome to contact page")
 
-let uContact = [ "n"]
+let uContact = [{
+    firstName: "Joe",
+    lastName: "Sam",
+    email: "jonasogboy@gmail.com",
+    phoneNum: 09077846373,
+    inputMessage: "nice to contact u"
+
+}]
 
 document.getElementById("btn_submit").addEventListener("click", function (e) {
     e.preventDefault()
