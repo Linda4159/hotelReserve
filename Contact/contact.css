@@ -152,8 +152,20 @@ footer {
   margin-top: 40px;
 }
 
-.ha1 {
-  margin-bottom: 20px;
+.top {
+  text-align: left;
+}
+
+.twiter {
+  text-align: left;
+}
+
+.quick {
+  text-align: left;
+}
+
+.beach {
+  text-align: left;
 }
 
 .logo {
