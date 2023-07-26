@@ -1,17 +1,9 @@
 body{
-    background-color: #EEEEF2;
+    background-color: white;
     font-family: 'Poppins', sans-serif;
 }
 
-header {
-    display: flex;
-    /* justify-content: space-around; */
 
-}
-.logo{
-    display: flex;
-
-}
 .debbyh11{
     text-align: center;
 }
@@ -20,23 +12,28 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: color #f5f5ff;
-    min-height: 500px;
-    gap: 50px;
+    min-height: 300px;
+    gap: 30px;
+    /* border: 2px solid rgb(29, 28, 28); */
+    width: 80%;
+    margin: 0 auto;
+    /* border-radius: 10px; */
+    
 
 }
 .debbyhold{
-    height: 500px;
+    height: 350px;
     width: 500px;
 }
 .debbyhold img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 15px;
 }
  input{
-    height: 50px;
-    width: 350px;
+    height: 38px;
+    width: 300px;
     border-radius: 5px;
     border: 1px solid black;
     
