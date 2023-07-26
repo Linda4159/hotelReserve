@@ -125,7 +125,7 @@ h5 {
 footer{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
     background-color: rgb(43, 41, 41);
     color: white;
   }
