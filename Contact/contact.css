@@ -34,8 +34,9 @@ header {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  margin-right: 10px;
+  margin-right: 20px;
 }
+
 .navigation {
   display: flex;
   padding-top: 40px;
@@ -120,13 +121,14 @@ nav {
 .input {
   width: 230px;
   height: 40px;
+  border-radius: 5px;
 }
-.messages {
-  width: 500px;
-  height: 70px;
+/* .messages {
+  width: 750px;
+  height: 30px;
   justify-content: center;
   align-items: center;
-}
+} */
 
 form {
   justify-content: center;
@@ -152,6 +154,40 @@ footer {
   margin-top: 40px;
 }
 
+<<<<<<< HEAD
+.ha1 {
+  /* margin-bottom: 20px; */
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.headlogo {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.headlogo img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.log {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.log img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+=======
 .top {
   text-align: left;
 }
@@ -166,6 +202,7 @@ footer {
 
 .beach {
   text-align: left;
+>>>>>>> 3d6ed8fd6bf23c06a44de153fe5624b002833fe7
 }
 
 .logo {
@@ -198,7 +235,10 @@ footer {
 .hanburger {
   display: none;
 }
-@media screen and (max-width: 768px) {
+p {
+  font-size: 13px;
+}
+/* @media screen and (max-width: 768px) {
   .hanburger {
     display: block;
   }
@@ -213,4 +253,4 @@ footer {
   button {
     display: none;
   }
-}
+} */
