@@ -4,24 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./signIn.css" />
   </head>
   <body>
-    <header>
-      <div class="headerlogo">
-        <img src="./imagesss/logo.svg" alt="" />
-        <div>hotelReserve</div>
-      </div>
-    </header>
-    <div class="sign_image">
-      <img src="./imagesss/signinLogo.jpg" alt="" />
+    <div class="signHead">
+      <h1>Welcome Back To hotelReserve</h1>
+      <h2>Login To Continue</h2>
     </div>
-    <h2>welcome to hotelReserve</h2>
-    <form>
-      <input type="text" id="signName" placeholder="Email or Phonenumber" />
-      <br />
-      <br />
-      <input type="password" id="signPass" placeholder="Password" />
-      <div>keep me po</div>
-    </form>
+
+    <div class="login">
+      <form>
+        <input
+          class="hT1"
+          type="text"
+          id="hotName"
+          placeholder="Email or Phonenumber"
+        />
+        <br />
+        <br />
+        <input
+          class="hT2"
+          type="password"
+          id="hotPass"
+          placeholder="Password"
+        />
+        <p><a>Forgot password</a></p>
+        <br />
+        <br />
+        <button class="butnn" id="btn_hot" value="login" type="submit">
+          Login
+        </button>
+      </form>
+
+      <div class="reg">
+        <img src="./imagesss/signinLogo.jpg" alt="login" />
+      </div>
+    </div>
+    <script src="signIn.js"></script>
   </body>
 </html>
