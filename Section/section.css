@@ -113,6 +113,8 @@ h5 {
     align-items: center;
     padding: 10px;
     width: 60%;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
 .rooms {
@@ -125,7 +127,36 @@ h5 {
 footer{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
     background-color: rgb(43, 41, 41);
     color: white;
+
   }
+  .logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    /* background-color: white; */
+    display: flex;
+
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.top{
+    text-align: left;
+}
+
+.beach{
+    text-align: left;
+}
+.twiter{
+    text-align: left;
+}
+.quick{
+    text-align: left;
+}
+
+

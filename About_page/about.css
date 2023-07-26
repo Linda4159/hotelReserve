@@ -125,15 +125,15 @@ nav {
   footer{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
     background-color: rgb(43, 41, 41);
     color: white;
   }
 
 
-.ha1{
+/* .ha1{
     margin-bottom: 20px;
-}
+} */
 
 .logo{
     height: 50px;
@@ -154,6 +154,19 @@ nav {
         display: none;
     }
 
+    .top{
+        text-align: left;
+    }
+    .beach{
+        text-align: left;
+    }
+    .twiter{
+        text-align: left;
+    }
+    .quick{
+        text-align: left;
+    }
+
 @media screen and (max-width: 768px) {
     .hanburgar{
         display: block;
@@ -161,11 +174,11 @@ nav {
     .navigation{
         display: none;
     }
-    .debbyheros{
-        /* min-height: 500px; */
+    /* .debbyheros{
+        min-height: 500px;
         
     }
-    
+     */
 }
 
 @media screen and (max-width: 768px)  {
