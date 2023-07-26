@@ -1,5 +1,7 @@
 // alert("welcome to contact page")
 
+let uContact = [ "n"]
+
 document.getElementById("btn_submit").addEventListener("click", function (e) {
     e.preventDefault()
     
@@ -10,8 +12,11 @@ document.getElementById("btn_submit").addEventListener("click", function (e) {
     let uTel =document.getElementById("number").value
     let uMeassage = document.getElementById("msg").value
 
-    // localStorage.setItem(firstVar)
+
 
      console.log(firstVar, lastN, uEmail, uTel, uMeassage)
+
+
+     localStorage
 })
 
