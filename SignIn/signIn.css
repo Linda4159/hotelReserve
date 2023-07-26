@@ -33,6 +33,10 @@ body {
   height: 50px;
   background-color: #64c5c6;
   color: #f4f7fc;
-  border-radius: 10px;
+  border-radius: 5px;
   border: #64c5c6;
+  margin-bottom: 50px;
+}
+.fPass {
+  text-align: right;
 }
