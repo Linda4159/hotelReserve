@@ -9,7 +9,16 @@ let uContact = [{
 
 }]
 
+const getAllD = () => {
+    let userD = new Array();
+    let getAllDetails = localStorage.getItem("ContactD")
+    IF (getAllD !=null )
+    {
+        userD = JSON.parse()
+    }
+    return userD
 
+}
 
 document.getElementById("btn_submit").addEventListener("click", function (e) {
     e.preventDefault()

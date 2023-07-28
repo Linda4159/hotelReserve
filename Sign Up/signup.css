@@ -36,14 +36,36 @@ body{
     width: 300px;
     border-radius: 5px;
     border: 1px solid black;
+    padding-left: 10px;
     
 } 
 form button{
-    height:50px ;
+    height:45px ;
     width:150px ;
-    border: 1px solid black;
+    border: 1px solid #64c5c6;
     background-color: #64c5c6;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 5px;
+    font-weight: bold;
+}
+ form button:hover{
+    background-color:white ;
+    color: black; 
+    cursor: pointer;
+ } 
+@media screen and (max-width: 768px){
+    .registerh{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: o auto;
+
+    }
+    .debbyhold{
+        width: 300px;
+    }
+    
+    input{
+        width: 270px;
+    }
 }
