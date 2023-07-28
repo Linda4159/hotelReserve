@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -69,26 +73,20 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20px;
 }
 .background-img h1 {
-  padding: 50px;
-  padding: 0;
-  padding: 50px;
   margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   color: #f4f7f4;
+  text-align: center;
 }
 .background-img h3 {
-  padding: 50pxS;
-  padding: 0;
-  padding: 50pxS;
   margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   color: #f4f7f4;
+  text-align: center;
+  margin-top: 30px;
 }
 .contact-form {
   width: 100%;
@@ -110,17 +108,17 @@ nav a {
 
 .names {
   width: 500px;
-  height: 40px;
+  gap: 10px;
   display: flex;
   justify-content: space-between;
-  border-radius: 5px;
+  flex-wrap: wrap;
 }
 .numandmail {
   width: 500px;
-  height: 40px;
+
   display: flex;
   justify-content: space-between;
-  border-radius: 5px;
+  flex-wrap: wrap;
 }
 .input {
   width: 230px;
@@ -161,36 +159,24 @@ footer {
   background-color: rgb(43, 41, 41);
   color: white;
   width: 100%;
-  margin-top: 40px;
-  height: 300px;
+  min-height: 250px;
+  position: relative;
 }
 .footer_logo {
-  height: 100px;
-  width: 100px;
-  /* background-color: red; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* flex-direction: column; */
-  margin-top: 10px;
-}
-.footer_logo img {
-  height: 50px;
-  width: 50px;
-  object-fit: contain;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  /* margin-top: 0px; */
+  display: none;
 }
 
 .Sub_head h2 {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 10px;
 }
 .Sub_head div {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.7;
+  font-size: 13px;
+  margin: 10px;
+}
+.hanburger {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -203,61 +189,66 @@ footer {
   .hanburger {
     display: block;
   }
+  .footer {
+    display: flex;
+    width: 100%;
+  }
+  .footer_logo {
+    display: none;
+  }
+  .footer_logo img {
+    display: none;
+  }
+  .background-img h3 {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .background-img h1 {
+    text-align: center;
+  }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 435px) {
   .background-img {
     height: 100%;
     width: 100%;
     object-fit: contain;
+    margin: 0 auto;
   }
 
   .background-img h1 {
-    width: 83%;
+    width: 100%;
     margin-top: 70px;
-    display: flex;
+
     color: #f4f7f4;
-    align-items: center;
   }
   .background-img h3 {
     width: 100%;
     margin-bottom: 80px;
-    display: flex;
+
     color: #f4f7f4;
     font-size: large;
-    margin-left: 30px;
-    /* align-items: center; */
-    /* margin-left: 50px; */
   }
-  .input {
-    width: 120px;
-    height: 20px;
-    border-radius: 5px;
-  }
+  /* align-items: center; */
+  /* margin-left: 50px; */
   .names {
-    width: 120px;
-    height: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    gap: 10px;
+    width: 100%;
+    gap: 20px;
   }
   .numandmail {
-    width: 120px;
-    height: 20px;
-    display: flex;
-    justify-content: space-around;
-    border-radius: 5px;
-    gap: 10px;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .input {
+    width: 200px;
+    gap: 40px;
   }
   .messages {
-    width: 250px;
-    height: 30px;
-    justify-content: center;
-    border-radius: 4px;
+    width: 100%;
   }
   .Sub_head h2 {
     font-size: 11px;
-    /* font-weight: 350; */
+    font-weight: 350;
   }
   .Sub_head div {
     font-size: 8px;
@@ -269,29 +260,24 @@ footer {
 
   footer {
     display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(43, 41, 41);
-    color: white;
-    padding: 0%;
+    /* flex-wrap: wrap; */
+    /* padding: 0%; */
     width: 100%;
     margin-top: 40px;
-    height: 110px;
+    object-fit: cover;
   }
   header {
     position: fixed;
-    background: #f4f7fc;
-    height: 40px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    gap: 100px;
+    gap: 80px;
   }
   .headerlogo div {
-    font-size: 10px;
+    font-size: 15Spx;
   }
   .headerlogo {
-    height: 20px;
-    width: 50px;
+    width: 100px;
     display: flex;
     font-weight: bolder;
     margin-left: 0%;
@@ -301,36 +287,59 @@ footer {
   .headerlogo img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    margin-left: 30px;
   }
   .hanburger {
     display: block;
     margin-right: 50px;
-    font-size: 10px;
+    font-size: 15px;
   }
 }
-/* @media screen and(max-width:375) {
+
+@media screen and (max-width: 1000px) {
+}
+
+@media screen and (max-width: 425px) {
   .background-img {
-    height: 100%;
     width: 100%;
     object-fit: cover;
+    word-wrap: break-word;
   }
   .background-img h1 {
-    width: 100%;
+    /* width: 100%; */
+    align-items: center;
   }
   .background-img h3 {
-    width: 80%;
+    width: 100%;
     font-size: small;
     margin-right: 50px;
+  }
+  form {
+    padding: 20px;
+  }
+  .names {
+    width: 100%;
+    gap: 20px;
+  }
+  .numandmail {
+    width: 100%;
+    gap: 20px;
+  }
+  .input {
+    width: 100%;
+    gap: 0;
   }
   footer {
     display: flex;
     justify-content: space-around;
     background-color: rgb(43, 41, 41);
     color: white;
-    padding: 0%;
+    /* padding: 0%; */
     width: 100%;
-  } */
+    object-fit: cover;
+  }
+}
 /* margin-top: 40px;
     height: 110px;
    */
@@ -352,8 +361,8 @@ footer {
     border-radius: 5px;
     gap: 10px;
   */
-/* .numandmail {
-    width: 120px;
+
+/* width: 120px;
     height: 20px;
     display: flex;
     justify-content: space-around;
@@ -361,7 +370,7 @@ footer {
     gap: 10px;
   
    */
-@media screen and (max-width: 435) {
+/* @media screen and (max-width: 435) {
   .background-img {
     height: 100%;
     width: 100%;
@@ -374,5 +383,5 @@ footer {
     display: flex;
     justify-content: space-between;
     border-radius: 5px;
-  }
-}
+  } */
+/* } */
