@@ -2,7 +2,7 @@
 body {
     width: 100%;
     min-height: 90vh;
-    background-color: #666 ;
+    background-color: #cccc ;
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -37,6 +37,13 @@ button {
     align-items: center;
     padding-bottom: 0%;
 }
+.headlogo{
+    height: 50px;
+    width: 50px;
+    border-radius: 80px;
+    /* background-color: white; */
+    display: flex;
+}
 nav {
     cursor: pointer;
     margin-right: 40px;
@@ -47,7 +54,7 @@ nav {
 
 .debbyheros {
     width: 100%;
-    min-height: 400px;
+    min-height: 550px;
     background-image: url(./image/Frame\ 57.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,6 +68,7 @@ nav {
     justify-content: center;
     color: #F4F7FC;
     background-color: black;
+    /* bottom: 30px; */
 }
 .herosh3{
     display: flex;
@@ -70,32 +78,29 @@ nav {
     background-color: black;
 }
 
-.search {
+/* .search {
     display: flex;
     flex-direction: row;
-}
+} */
 
 
 
     .debbyabout{
-        min-height: 400px;
-        width: 100%;
+        min-height: 550px;
+       width: 100%;
         background-color: #cccccc;
         justify-content: center; 
         align-items: center;
         display: flex;
-        border-radius: 10px;
+        gap: 10px;
 }
 .debbya{
-    height: 300px;
-    width: 500px;
+    height: 400px;
+    width: 550px;
     background-image: url(./image/Frame\ 48.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-
-
 }
 
 
@@ -103,24 +108,63 @@ nav {
     font-size: 50px;
     text-align: left;
     font-weight: bold;
-     margin-left: 30px; 
+     margin-left: 30px;
+    border-right: 3px solid aquamarine;
+    width: 360px;
+    animation: typewritter,blinkcursor;
+    white-space: nowrap;
+    overflow: hidden;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(44);
+    animation-direction: alternate;
+}
+
+@keyframes typewritter {
+    0% {
+
+        width: 0;
+    }
+    100%{
+      width: 240px;
+    }
+}
+
+@keyframes blinkcursor{
+    0%{
+       border-right-color: aquamarine;
+    }
+    100%{
+        border-right-color: rgb(187, 245, 225);
+    }
+
 }
   
 .pa{
     font-size: 20px;
     margin-left: 30px;
     width: 400px;
-
+    animation-name: mycontent;
+    animation-duration: 3s;
+    position: relative;
+    left: 0;
+}
+@keyframes mycontent {
+    0%{
+        left: -1000px;
+    }
+    100%{
+        left: 0;
+    }
 }
 
 .writeup{
-    height: 350px;
+    height: 400px;
     width: 500px;
     background-color: rgb(241, 234, 234);
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    
     
     }
     
@@ -131,6 +175,9 @@ nav {
     /* align-items: center; */
     background-color: rgb(43, 41, 41);
     color: white;
+    min-height: 250px;
+    width: 100%;
+    position: relative;
   }
 
 
@@ -139,19 +186,22 @@ nav {
     font-weight: bold;
 }
 
-.logo{
+.foologo{
     height: 50px;
     width: 50px;
-    border-radius: 80px;
+    border-radius: 50px;
     /* background-color: white; */
     display: flex;
+    margin-top: 50px;
 
 }
+
+
 p{
     font-size: 13px;
 
 }
-.logo img{
+.foologo img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -164,15 +214,19 @@ p{
 
     .top{
         text-align: left;
+        margin-top: 30px;
     }
     .beach{
         text-align: left;
+        margin-top: 30px;
     }
     .twiter{
         text-align: left;
+        margin-top: 30px;
     }
-    .quick{
+    .Quick{
         text-align: left;
+        margin-top: 30px;
     }
 
 @media screen and (max-width: 768px) {
@@ -212,7 +266,16 @@ p{
     footer{
         flex-wrap: wrap;
     }
-
+    .foologo{
+        flex-wrap: wrap;
+    }
+     
+    /* .slider{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    } */
     
   
 }
@@ -230,3 +293,69 @@ p{
      }
 
 }
+ .slide{
+    height: 400px;
+    overflow: hidden;
+}
+.slide h2{
+    text-align: center;
+    font-weight: 550;
+}
+.gym{
+    position: absolute;
+    margin: 20px;
+    /* text-align: center; */
+    color: #64C5c6;
+    background-color: white;
+}
+.g{
+    position: absolute;
+    margin: 20px;
+    color:#64C5c6 ;
+    background-color: white;
+}
+.gy{
+    position: absolute;
+    margin: 20px;
+    color:#64C5c6 ;
+    background-color: white;
+}
+
+
+.slider{
+    /* height: 500px;  */
+      width: 500%;
+    position: relative;
+    left: 0;
+    animation-name: sli;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    /* text-align: center; */
+}
+.slider img{
+    float: left;
+    width: 20%;
+   /* height: 350px; */
+   /* width: 20%; */
+}
+
+@keyframes sli{
+    0% {
+        left: 0;
+    }
+    33.33% {
+        left: 0;
+    }
+    66.66% {
+        left: -100%;
+    }
+    80% {
+        left: -200%;
+    }
+    90.99% {
+        left: -200%;
+    }
+    100% {
+        left: 0;
+    }
+} 
