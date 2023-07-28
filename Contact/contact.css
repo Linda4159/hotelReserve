@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-weight: "poppins", sans-serif;
+  font-family: "poppins", sans-serif;
 }
 header {
   position: fixed;
@@ -23,8 +23,8 @@ header {
 }
 
 .headerlogo {
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -34,9 +34,8 @@ header {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  margin-right: 20px;
+  margin-right: 10px;
 }
-
 .navigation {
   display: flex;
   padding-top: 40px;
@@ -49,9 +48,14 @@ header {
 }
 nav {
   cursor: pointer;
-  margin-right: 40px;
-  font-size: 100%;
+  margin: 0px 15px;
+  /* font-size: 100%; */
   margin-bottom: 45px;
+  color: black;
+}
+
+nav a {
+  text-decoration: none;
   color: black;
 }
 
@@ -109,33 +113,36 @@ nav {
   height: 40px;
   display: flex;
   justify-content: space-between;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .numandmail {
   width: 500px;
   height: 40px;
   display: flex;
   justify-content: space-between;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .input {
   width: 230px;
   height: 40px;
-  border-radius: 5px;
+  border-radius: 4px;
 }
-/* .messages {
-  width: 750px;
-  height: 30px;
+.messages {
+  width: 500px;
+  height: 70px;
   justify-content: center;
   align-items: center;
-} */
+  border-radius: 4px;
+}
 
 form {
+  display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
+  flex-direction: column;
   margin-top: 20px;
 }
+
 button {
   width: 150px;
   height: 50px;
@@ -143,7 +150,10 @@ button {
   color: #f4f7fc;
   border-radius: 10px;
   border: #64c5c6;
+  cursor: pointer;
 }
+
+/* FOOTER */
 footer {
   display: flex;
   justify-content: space-around;
@@ -152,105 +162,217 @@ footer {
   color: white;
   width: 100%;
   margin-top: 40px;
+  height: 300px;
 }
-
-<<<<<<< HEAD
-.ha1 {
-  /* margin-bottom: 20px; */
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.headlogo {
-  height: 50px;
+.footer_logo {
+  height: 100px;
+  width: 100px;
+  /* background-color: red; */
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
   margin-top: 10px;
 }
-
-.headlogo img {
-  height: 40px;
-  width: 40px;
-  margin-right: 10px;
-}
-
-.log {
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.log img {
-  height: 40px;
-  width: 40px;
-  margin-right: 10px;
-=======
-.top {
-  text-align: left;
-}
-
-.twiter {
-  text-align: left;
-}
-
-.quick {
-  text-align: left;
-}
-
-.beach {
-  text-align: left;
->>>>>>> 3d6ed8fd6bf23c06a44de153fe5624b002833fe7
-}
-
-.logo {
+.footer_logo img {
   height: 50px;
   width: 50px;
-  border-radius: 80px;
-  /* background-color: white; */
-  display: flex;
-  /* align-items: center; */
-  /* margin-top: 50px; */
-}
-
-/* .logo{
-  height: 50px;
-  width: 50px;
-  border-radius: 80px;
-  /* background-color: white; */
-  /* display: flex; */ */
-
-
-
-
-.logo img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  /* margin-right: 10px; */
+  object-fit: contain;
+  margin-right: 10px;
+  margin-bottom: 10px;
   /* margin-top: 0px; */
 }
-.hanburger {
-  display: none;
+
+.Sub_head h2 {
+  font-size: 24px;
+  font-weight: 600;
 }
-p {
-  font-size: 13px;
+.Sub_head div {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
 }
-/* @media screen and (max-width: 768px) {
-  .hanburger {
-    display: block;
+
+@media screen and (max-width: 768px) {
+  button {
+    display: none;
   }
   .navigation {
     display: none;
   }
-  .background-img {
-    min-height: 500px;
+  .hanburger {
+    display: block;
   }
 }
-@media screen and (max-width: 768) {
-  button {
+@media screen and (max-width: 320px) {
+  .background-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .background-img h1 {
+    width: 83%;
+    margin-top: 70px;
+    display: flex;
+    color: #f4f7f4;
+    align-items: center;
+  }
+  .background-img h3 {
+    width: 100%;
+    margin-bottom: 80px;
+    display: flex;
+    color: #f4f7f4;
+    font-size: large;
+    margin-left: 30px;
+    /* align-items: center; */
+    /* margin-left: 50px; */
+  }
+  .input {
+    width: 120px;
+    height: 20px;
+    border-radius: 5px;
+  }
+  .names {
+    width: 120px;
+    height: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    gap: 10px;
+  }
+  .numandmail {
+    width: 120px;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    gap: 10px;
+  }
+  .messages {
+    width: 250px;
+    height: 30px;
+    justify-content: center;
+    border-radius: 4px;
+  }
+  .Sub_head h2 {
+    font-size: 11px;
+    /* font-weight: 350; */
+  }
+  .Sub_head div {
+    font-size: 8px;
+    font-weight: 200;
+  }
+  .footer_logo {
     display: none;
   }
-} */
+
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(43, 41, 41);
+    color: white;
+    padding: 0%;
+    width: 100%;
+    margin-top: 40px;
+    height: 110px;
+  }
+  header {
+    position: fixed;
+    background: #f4f7fc;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+  }
+  .headerlogo div {
+    font-size: 10px;
+  }
+  .headerlogo {
+    height: 20px;
+    width: 50px;
+    display: flex;
+    font-weight: bolder;
+    margin-left: 0%;
+    margin-right: 65px;
+    display: flex;
+  }
+  .headerlogo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .hanburger {
+    display: block;
+    margin-right: 50px;
+    font-size: 10px;
+  }
+}
+/* @media screen and(max-width:375) {
+  .background-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .background-img h1 {
+    width: 100%;
+  }
+  .background-img h3 {
+    width: 80%;
+    font-size: small;
+    margin-right: 50px;
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(43, 41, 41);
+    color: white;
+    padding: 0%;
+    width: 100%;
+  } */
+/* margin-top: 40px;
+    height: 110px;
+   */
+
+/* .input {
+    width: 10px;
+    height: 10px;
+  }
+  /*  border-radius: 5px;
+  
+  .names {
+    width: 10px;
+    height: 10px;
+    display: grid;
+
+    /* 
+    
+    /*justify-content: space-evenly;
+    border-radius: 5px;
+    gap: 10px;
+  */
+/* .numandmail {
+    width: 120px;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    gap: 10px;
+  
+   */
+@media screen and (max-width: 435) {
+  .background-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .names {
+    width: 50px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+}

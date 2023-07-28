@@ -1,5 +1,25 @@
 // alert("welcome to contact page")
 
+let uContact = [{
+    firstName: "Joe",
+    lastName: "Sam",
+    email: "jonasogboy@gmail.com",
+    phoneNum: "09077846373",
+    inputMessage: "nice to contact u"
+
+}]
+
+const getAllD = () => {
+    let userD = new Array();
+    let getAllDetails = localStorage.getItem("ContactD")
+    IF (getAllD !=null )
+    {
+        userD = JSON.parse()
+    }
+    return userD
+
+}
+
 document.getElementById("btn_submit").addEventListener("click", function (e) {
     e.preventDefault()
     
@@ -10,8 +30,11 @@ document.getElementById("btn_submit").addEventListener("click", function (e) {
     let uTel =document.getElementById("number").value
     let uMeassage = document.getElementById("msg").value
 
-    // localStorage.setItem(firstVar)
+
 
      console.log(firstVar, lastN, uEmail, uTel, uMeassage)
+
+
+     localStorage
 })
 

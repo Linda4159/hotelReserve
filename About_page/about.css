@@ -158,6 +158,16 @@ nav {
     }
 }
 
+    .debbyabout{
+        min-height: 400px;
+        width: 100%;
+        background-color: #cccccc;
+        justify-content: center; 
+        align-items: center;
+        display: flex;
+        border-radius: 10px;
+}
+
 .writeup{
     height: 400px;
     width: 500px;
