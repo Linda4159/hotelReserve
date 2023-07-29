@@ -19,6 +19,25 @@ body {
     font-family: 'Poppins', sans-serif;
     
 }
+<<<<<<<<< Temporary merge branch 1
+
+=========
+.headlogo {
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    margin-left: 100px;
+    /* margin-left: 2px; */
+  }
+  .headlogo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+>>>>>>>>> Temporary merge branch 2
 header {
     position: fixed;
     background: #F4F7FC;
