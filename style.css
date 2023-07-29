@@ -58,11 +58,10 @@ header {
     color: white;
     font-weight: bold;
 }
-
+/* 
 .butt {
     display: flex;
     justify-content: space-around;
-    /* margin-left: 20px; */
     padding-right: 5px;
 }
 button {
@@ -90,7 +89,7 @@ nav {
     font-size: 100%;
     margin-bottom: 45px;
     color: black;
-}
+} */
 nav :hover {
     text-decoration: underline;
     text-shadow: chocolate;
