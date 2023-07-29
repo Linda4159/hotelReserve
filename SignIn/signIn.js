@@ -12,7 +12,6 @@ document.getElementById("btn_hot").addEventListener("click", function (e) {
   console.log(hotmail && hotpasW);
   if (hotEmail === hotmail && hotPass === hotpasW) {
     alert("Login Successful");
-    window.location.href = "./sign.html"
   } else {
     alert("Incorrect email or password");
   }
