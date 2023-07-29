@@ -26,6 +26,9 @@ header {
   z-index: 999;
   padding-top: 0px;
 }
+.headerlogo div {
+  font-weight: bold;
+}
 
 .headerlogo {
   height: 30px;
