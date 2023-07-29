@@ -43,6 +43,9 @@ header {
 .contactButt {
   margin-top: 20px;
 }
+.contactButt a {
+  text-decoration: none;
+}
 .navigation {
   display: flex;
   padding-top: 40px;
