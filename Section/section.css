@@ -7,7 +7,7 @@ body{
 
 
 header {
-    position: sticky;
+    position: fixed;
     background: #F4F7FC;
     height: 75px;
     width: 100%;
@@ -33,8 +33,14 @@ button {
     text-align: center;
     cursor: pointer;
     align-items: center;
-    /* margin-right: 50px; */
     padding-bottom: 0%;
+}
+.headlogo{
+    height: 50px;
+    width: 50px;
+    border-radius: 80px;
+    /* background-color: white; */
+    display: flex;
 }
 nav {
     cursor: pointer;
@@ -44,33 +50,44 @@ nav {
     color: black;
 }
 
+.logoh4 {
+    margin-left: 0;
+    color: black;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
 .section-top {
-    background-image: url(./images/lagos\ beach\ 4.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    /* margin-top: 120px; */
+    background-image: url(./images/beautiful.jpg);
     width: 100%;
     height: 350px;
-    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex; */
+    border-radius: 5px;
+    background-position: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    padding-top: 90px;
 
 }
 
 .section-head {
-    /* background-color: white; */
+    /* background-color: black; */
     text-decoration-color: white;
     border-radius: 5px;
     width: 50%;
     height: fit-content;
     text-align: center;
     margin-left: 30px;
-    margin-top: 50px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 10px;
 }
+
 
 p{
     font-size: 10px;
@@ -98,6 +115,7 @@ h3{
 .sub-section {
     text-align: center;
     padding-bottom: 50px;
+    color: black;
 }
 
 h4 {
@@ -134,33 +152,15 @@ h4 {
     margin-right: 10px;
 }
 
-footer {
+
+footer{
     display: flex;
     justify-content: space-around;
     /* align-items: center; */
     background-color: rgb(43, 41, 41);
     color: white;
+    min-height: 250px;
     width: 100%;
-    margin-top: 40px;
-    height: 300px;
-  }
-  .footer_logo {
-    height: 100px;
-    width: 100px;
-    /* background-color: red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* flex-direction: column; */
-    margin-top: 10px;
+    position: relative;
   }
 
-  .footer_logo img {
-    height: 50px;
-    width: 50px;
-    object-fit: contain;
-    margin-right: 10px;
-    margin-bottom: 10px;
-
-  }
-   
