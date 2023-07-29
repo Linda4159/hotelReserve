@@ -19,6 +19,7 @@ body {
     font-family: 'Poppins', sans-serif;
     
 }
+
 .headlogo {
     height: 30px;
     width: 30px;
@@ -34,13 +35,12 @@ body {
     width: 100%;
     object-fit: cover;
   }
+
 header {
     position: fixed;
     background: #F4F7FC;
     height: 75px;
     width: 100%;
-    /* display: flex; */
-    display: none;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
@@ -48,22 +48,67 @@ header {
     padding-top: 0px;
     margin: 0%;
     color: rgba(0, 0, 0, 0.98);
+    display: flex;
 }
+  .headerlogo {
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    display: flex;
+    /* align-items: center; */
+    /* font-weight: bolder; */
+  }
+  .headerlogo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-right: 10px;
+  } 
+  .butt {
+    margin-top: 20px;
+  }
+  .butt a {
+    text-decoration: none;
+  }
+  .navigation {
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-around;
+    text-align: center;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 170px;
+    padding-bottom: 0%;
+  }
+  nav {
+    cursor: pointer;
+    margin-right: 40px;
+    font-size: 100%;
+    margin-bottom: 45px;
+    color: black;
+  }
+
 .signup {
     margin: 10px;
-    color: white;
+    color: black;
     font-weight: bold;
+    margin-bottom: 40px;
 }
 .regtd {
     margin: 10px;
-    color: white;
+    color: black;
     font-weight: bold;
+    margin-bottom: 10px;
+    
 }
-
+.headlogo div {
+    margin-left: 15px;
+    
+}
+/* 
 .butt {
     display: flex;
     justify-content: space-around;
-    /* margin-left: 20px; */
     padding-right: 5px;
 }
 button {
@@ -91,7 +136,7 @@ nav {
     font-size: 100%;
     margin-bottom: 45px;
     color: black;
-}
+} */
 nav :hover {
     text-decoration: underline;
     text-shadow: chocolate;
@@ -157,6 +202,7 @@ input{
  }
  .searchhotel {
     margin: auto;
+    color: black;
  }
 .suggested {
     margin-top: 10px;
@@ -579,8 +625,9 @@ input{
 }
 footer h4 {
     font-size: medium;
-    font-weight: 150;
-    margin: 10px;
+    font-size: 13px;
+    font-weight: 15;
+    margin: 7px;
     /* margin-left: 10px; */
     
 
@@ -588,33 +635,26 @@ footer h4 {
 footer h2 {
     font-size: 15px;
     font-weight: bold;
-    margin-left: 15px;
     display: flex;
+    padding-top: 10px;
     justify-content: space-evenly;
     /* margin-left: 10px; */
 }
-footer{
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(43, 41, 41);
+    color: white;
+    width: 100%;
+    min-height: 250px;
+    position: relative;
+  }
+/* footer{
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(43, 41, 41);
     color: white;
-    /* min-height:200px; */
-  }
-  .log {
-    height: 30px;
-    width: 30px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
-  }
-  .log img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    margin-right: 10px;
-    /* margin-top: 0px; */
-  }
+  } */
   .getmore img {
     width: 100%;
     height: 100%;
@@ -659,10 +699,23 @@ footer{
 .flex2 a {
     color: aqua;
 }
-button:hover {
-    background-color: #e9e9e9;
-    
-}
+button {
+    width: 150px;
+    height: 50px;
+    background-color: #64c5c6;
+    color: #f4f7fc;
+    border-radius: 10px;
+    border: #64c5c6;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  button:hover {
+    background-color: bisque;
+    color: black;
+    cursor: pointer;
+  }
+  
 .hanburger {
     display: none;
 }
@@ -676,16 +729,16 @@ button:hover {
     
 } */
 @media screen and (max-width: 425px) { 
-    /* .hanburger {
+    .hanburger {
         display: block;
     }
     .navigation {
         display: none;
     } */
-    /* header {
+     header {
         width: 100%;
 
-    } */
+    }
     .hero {
         background-position: center;
         width: 400px;
