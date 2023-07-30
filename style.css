@@ -948,7 +948,10 @@ footer{
     /* min-height:200px; */
   }
   
-
+ i {
+    color: rgb(84, 84, 84);
+    margin-right: 90px;
+}
     
     
 }
