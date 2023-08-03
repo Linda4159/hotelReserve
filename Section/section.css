@@ -7,55 +7,83 @@ body{
 
 
 header {
-    position: fixed;
-    background: #F4F7FC;
-    height: 75px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    z-index: 999 ;
-    padding-top: 0px;
+  position: fixed;
+  background: #f4f7fc;
+  height: 75px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 999;
+  padding-top: 0px;
 }
-button {
-    width: 150px;
-    height: 50px;
-    background-color:  #64C5c6;
-    color: #F4F7FC;
-    border-radius: 10px;
-    border: #64C5c6;
+.headerlogo div {
+  font-weight: bold;
+}
+
+.headerlogo {
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.headerlogo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  margin-right: 10px;
+}
+.contactButt {
+  margin-top: 20px;
+}
+.contactButt a {
+  text-decoration: none;
 }
 .navigation {
-    display: flex;
-    padding-top: 40px;
-    justify-content: space-around;
-    text-align: center;
-    cursor: pointer;
-    align-items: center;
-    padding-bottom: 0%;
+  display: flex;
+  padding-top: 40px;
+  justify-content: space-around;
+  text-align: center;
+  cursor: pointer;
+  align-items: center;
+  margin-left: 170px;
+  padding-bottom: 0%;
 }
-.headlogo {
-    height: 30px;
-    width: 30px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    font-weight: bolder;
-    margin-left: 40px;
-  }
-  .headlogo img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    margin-right: 10px;
-  }
 nav {
-    cursor: pointer;
-    margin-right: 40px;
-    font-size: 100%;
-    margin-bottom: 45px;
-    color: black;
+  cursor: pointer;
+  margin-right: 40px;
+  font-size: 100%;
+  margin-bottom: 45px;
+  color: black;
+}
+nav :hover {
+  text-decoration: underline;
+  text-shadow: chocolate;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  background-color: #64c5c6;
+  color: #f4f7fc;
+  border-radius: 10px;
+  border: #64c5c6;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+button:hover {
+  background-color: bisque;
+  color: black;
+  cursor: pointer;
 }
 
 /* .logoh4 {
@@ -202,9 +230,10 @@ h4 {
   }
 
 
-  @media screen and (max-width: 426px) {
+  @media screen and (min-width:320px) and (max-width: 426px) {
     .footer {
         justify-content: space-around;
+        width: 100%;
     }
 
     .section-top {
