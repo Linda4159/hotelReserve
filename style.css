@@ -27,7 +27,7 @@ body {
     display: flex;
     align-items: center;
     font-weight: bolder;
-    margin-left: 100px;
+    /* margin-left: 100px; */
     /* margin-left: 2px; */
   }
   .headlogo img {
@@ -43,100 +43,68 @@ header {
     width: 100%;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     z-index: 999 ;
     padding-top: 0px;
-    margin: 0%;
     color: rgba(0, 0, 0, 0.98);
     display: flex;
 }
-  .headerlogo {
+  .headlogo {
+
     height: 30px;
     width: 30px;
     border-radius: 10px;
     display: flex;
-    /* align-items: center; */
-    /* font-weight: bolder; */
+    position: relative;
+    right: 30px;
   }
-  .headerlogo img {
+  .headlogo img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    margin-right: 10px;
+    margin-left: 90px;
   } 
   .butt {
-    margin-top: 20px;
+    position: relative;
+    margin: auto 0;
+    top: 10px;
+    right: 60px;
   }
   .butt a {
     text-decoration: none;
   }
   .navigation {
+    position: relative;
     display: flex;
     padding-top: 40px;
     justify-content: space-around;
     text-align: center;
     cursor: pointer;
     align-items: center;
-    margin-left: 170px;
+    left: 60px;
     padding-bottom: 0%;
   }
   nav {
     cursor: pointer;
-    margin-right: 40px;
+    margin-right: 20px;
     font-size: 100%;
     margin-bottom: 45px;
     color: black;
   }
 
 .signup {
-    margin: 10px;
+    /* margin: 10px; */
     color: black;
     font-weight: bold;
     margin-bottom: 40px;
 }
 .regtd {
-    margin: 10px;
+    /* margin: 10px; */
     color: black;
     font-weight: bold;
     margin-bottom: 10px;
     
 }
-.headlogo div {
-    margin-left: 15px;
-    
-}
-/* 
-.butt {
-    display: flex;
-    justify-content: space-around;
-    padding-right: 5px;
-}
-button {
-    cursor: pointer;
-    width: 150px;
-    height: 50px;
-    background-color:  #64C5c6;
-    color: #F4F7FC;
-    border-radius: 10px;
-    border: #64C5c6;
-}
-.navigation {
-    display: flex;
-    margin-top: 40px;
-    justify-content: space-around;
-    text-align: center;
-    cursor: pointer;
-    align-items: center;
-    margin-left: 142px;
-    padding-bottom: 0%;
-}
-nav {
-    cursor: pointer;
-    margin-right: 30px;
-    font-size: 100%;
-    margin-bottom: 45px;
-    color: black;
-} */
 nav :hover {
     text-decoration: underline;
     text-shadow: chocolate;
@@ -239,10 +207,11 @@ input{
     /* display: flex;
     flex-wrap: wrap; */
     width: 100%;
-    gap: 20px;
+    position: relative;
+    gap: 50px;
     min-height: 500px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .hotellag {
@@ -389,11 +358,9 @@ input{
 .flex1{
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    margin: auto;
     align-items: center;
-    margin: 0px;
-    gap: 30px;
+    /* margin: 0px; */
+    gap: 50px;
 
 }
 .flex2 {
@@ -401,7 +368,7 @@ input{
     justify-content: space-around;
     margin: auto;
     margin-top: 40px;
-    gap: 30px;
+    gap: 50px;
     align-items: center;
     flex-wrap: wrap;
 
@@ -719,6 +686,10 @@ button {
 .hanburger {
     display: none;
 }
+i {
+    color: rgb(84, 84, 84);
+    margin-right: 90px;
+}
 /* @media screen and (min-width:1024px) {
     .navigation{
         display: flex;
@@ -728,16 +699,24 @@ button {
     }
     
 } */
-@media screen and (max-width: 425px) { 
+@media screen and (max-width: 320px) { 
+    body {
+        padding: 20px;
+        padding-top: 0;
+    }
     .hanburger {
         display: block;
     }
     .navigation {
         display: none;
-    } */
+    } 
      header {
         width: 100%;
-
+    }
+    .headlogo  {
+        position: relative;
+        right: 90px;
+        
     }
     .hero {
         background-position: center;
@@ -747,7 +726,6 @@ button {
         /* flex-direction: column;
         justify-content: center;
         align-items: center; */
-    
     }
     .hero h1 {
         display: flex;
@@ -948,10 +926,8 @@ footer{
     /* min-height:200px; */
   }
   
- i {
-    color: rgb(84, 84, 84);
-    margin-right: 90px;
-}
-    
+ .butt {
+    display: none;
+ }   
     
 }
